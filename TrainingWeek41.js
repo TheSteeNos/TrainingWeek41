@@ -96,6 +96,15 @@ console.log("");
 console.log("Task: D");
 console.log("");
 
+const fruitsLongerThan8Characters = [];
+
+for (fruit of fruits) {
+    if(fruit.length > 8) {
+        fruitsLongerThan8Characters.push(fruit);
+    }
+}
+
+console.log(fruitsLongerThan8Characters.length);
 
 
 /* -----------------------------------------------------------------------------
@@ -110,3 +119,4 @@ console.log("");
 
 const A = [1, 4, 5, "Bananas", true, 3.14, 9.81];
 const B = [1, 3.14, 5, 9.81, true, 4, "Bananas"];
+
