@@ -11,7 +11,24 @@ console.log("");
 console.log("Task: A");
 console.log("");
 
+const TRIANGULAR_NUMBERS = [0, 1, 3, 6, 10, 15, 21, 28, 36, 45, 55];
 
+let sumOfTriangularNumbers = 0;
+
+for (let i = 0; i < TRIANGULAR_NUMBERS.length; i++) {
+    sumOfTriangularNumbers += TRIANGULAR_NUMBERS[i]
+}
+
+function sum(array) {
+    let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+        sum += array[i];
+    }
+    return sum;
+}
+
+const taskA = sum(TRIANGULAR_NUMBERS)
+console.log(taskA)
 
 /* -----------------------------------------------------------------------------
     Task: B
@@ -29,23 +46,23 @@ const fruits = ["Apple", "Banana", "Orange", "Grape", "Kiwi", "Mango", "Pineappl
 console.log("1.");
 console.log("");
 
-for(fruit of fruits) {
+for (fruit of fruits) {
     console.log(fruit)
     if(fruit == "Raspberry") {
         break;
-    };
-};
+    }
+}
 
 console.log("");
 console.log("2.");
 console.log("");
 
-for(fruit in fruits) {
+for (fruit in fruits) {
     console.log(fruits[fruit])
     if(fruit == 12) {
         break;
-    };
-};
+    }
+}
 
 /* -----------------------------------------------------------------------------
     Task: C
