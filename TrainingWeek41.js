@@ -48,7 +48,7 @@ console.log("");
 
 for (fruit of fruits) {
     console.log(fruit)
-    if(fruit == ("Raspberry")) {
+    if(fruit == "Raspberry") {
         break;
     }
 }
@@ -57,12 +57,16 @@ console.log("");
 console.log("2.");
 console.log("");
 
-for (fruit in fruits) {
-    console.log(fruits[fruit])
-    if(fruit == 12) {
-        break;
+function findFruit(fruitInputted) {
+    for (fruit in fruits) {
+        console.log(fruits[fruit])
+        if(fruits[fruit].toLowerCase() == fruitInputted.toLowerCase()) {
+            break;
+        }
     }
 }
+
+let raspberry = findFruit("raspberry")
 
 /* -----------------------------------------------------------------------------
     Task: C
@@ -120,3 +124,25 @@ console.log("");
 const A = [1, 4, 5, "Bananas", true, 3.14, 9.81];
 const B = [1, 3.14, 5, 9.81, true, 4, "Bananas"];
 
+function equalArrays(array1, array2) {
+    if (array1.length != array2.length) {
+        return false;
+    }
+    let sortedArray1 =array1.slice().sort();
+    let sortedArray2 =array2.slice().sort();
+    for (let i = 0; i < sortedArray1.length; i++) {
+        if(sortedArray1[i] != sortedArray2[i]) {
+            return false;
+        }
+    }
+    return true;
+}
+
+if(equalArrays(A, B) == true) {
+    console.log("The Arrays are Equal")
+}
+else {
+    console.log("The Arrays are not Equal")
+}
+
+console.log("");
