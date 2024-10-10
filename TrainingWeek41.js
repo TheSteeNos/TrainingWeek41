@@ -5,12 +5,11 @@
     2. Declare a variable to keep the sum of the numbers from step 1.
     3. Use a for or while loop to sum the numbers from step 1 to the variable from step 2
     4. Make a generic function for step 3.
-    
 */
 
-console.log("")
+console.log("");
 console.log("Task: A");
-console.log("")
+console.log("");
 
 
 
@@ -18,16 +17,35 @@ console.log("")
     Task: B
 
     1. Use a for loop to find the position of 'raspberry' in the list of fruits.
-    2. Create a generic function that can find the position of anny fruit in the list. 
+    2. Create a generic function that can find the position of any fruit in the list. 
 */
 
-console.log("")
+console.log("");
 console.log("Task: B");
-console.log("")
+console.log("");
 
-const fruits = ['apple', 'banana', 'orange', 'grape', 'kiwi', 'mango', 'pineapple', 'pear', 'peach', 'plum', 'watermelon', 'blueberry', 'raspberry', 'blackberry', 'strawberry', 'cherry', 'lemon', 'lime', 'pomegranate', 'apricot'];
+const fruits = ["Apple", "Banana", "Orange", "Grape", "Kiwi", "Mango", "Pineapple", "Pear", "Peach", "Plum", "Watermelon", "Blueberry", "Raspberry", "Blackberry", "Strawberry", "Cherry", "Lemon", "Lime", "Pomegranate", "Apricot"];
 
+console.log("1.");
+console.log("");
 
+for(fruit of fruits) {
+    console.log(fruit)
+    if(fruit == "Raspberry") {
+        break;
+    };
+};
+
+console.log("");
+console.log("2.");
+console.log("");
+
+for(fruit in fruits) {
+    console.log(fruits[fruit])
+    if(fruit == 12) {
+        break;
+    };
+};
 
 /* -----------------------------------------------------------------------------
     Task: C
@@ -37,9 +55,9 @@ const fruits = ['apple', 'banana', 'orange', 'grape', 'kiwi', 'mango', 'pineappl
     3. Print the number of fruits that start with 'b' (hint: it will be the length of the list from point 2).
 */
 
-console.log("")
+console.log("");
 console.log("Task: C");
-console.log("")
+console.log("");
 
 
 
@@ -49,9 +67,9 @@ console.log("")
     * Print the count.
 */
 
-console.log("")
+console.log("");
 console.log("Task: D");
-console.log("")
+console.log("");
 
 
 
@@ -61,9 +79,9 @@ console.log("")
     Use loops (for or while) to prove that list A and list B contain exactly the same items.
 */
 
-console.log("")
+console.log("");
 console.log("Task: E");
-console.log("")
+console.log("");
 
 const A = [1, 4, 5, "Bananas", true, 3.14, 9.81];
 const B = [1, 3.14, 5, 9.81, true, 4, "Bananas"];
