@@ -48,7 +48,7 @@ console.log("");
 
 for (fruit of fruits) {
     console.log(fruit)
-    if(fruit == "Raspberry") {
+    if(fruit == ("Raspberry")) {
         break;
     }
 }
@@ -76,7 +76,15 @@ console.log("");
 console.log("Task: C");
 console.log("");
 
+const fruitsStartingWithB = [];
 
+for (fruit of fruits) {
+    if(fruit.toLowerCase().startsWith("b")) {
+        fruitsStartingWithB.push(fruit);
+    }
+}
+
+console.log(fruitsStartingWithB.length);
 
 /* -----------------------------------------------------------------------------
     Task: D
